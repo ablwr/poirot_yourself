@@ -47,6 +47,10 @@ body {
   font-style: italic;
 }
 
+.help-text a {
+  color: grey;
+}
+
 .alert-message{
   position: fixed;
   top: 0;
