@@ -303,7 +303,6 @@
     container.addEventListener('mousemove', onMouseMove);
   }
 
-
   //------------------------------
   // Callbacks
   //------------------------------
@@ -311,7 +310,6 @@
     FSS.Vector3.set(attractor, event.x, renderer.height - event.y);
     FSS.Vector3.subtract(attractor, center);
     LIGHT.autopilot = !LIGHT.autopilot;
-    autopilotController.updateDisplay();
   }
 
   function onMouseMove(event) {
@@ -324,9 +322,25 @@
     render();
   }
 
-
-
   // Let there be light!
   initialise();
 
 })();
+
+$(document).ready(function(){
+  $('.alert-message').hide();
+});
+
+$('input').keypress(function (e) {
+  if (e.which == 13) {
+    var imageUrl = $('input').val();
+    if (imageUrl != '' && imageUrl.indexOf('://') != -1 ) {
+      $('body').css({
+        'background-image': 'url("'+imageUrl+'")',
+        'background-size': 'cover'
+        });
+      }
+    else {
+      $('.alert-message').slideDown().delay(1000).slideUp();}
+  }
+});

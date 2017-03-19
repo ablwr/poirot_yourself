@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Poirot Yourself</title>
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/css.css">
   </head>
   <body>
     <div id="container" class="container">
-      <img src="face.jpg" alt="">
        <div id="output" class="container">
        </div>
        <div id="vignette" class="overlay vignette">
@@ -18,9 +18,23 @@
          <header id="header" class="header">
          </header>
        </div>
+
+       <div class="alert-message">
+         <p class="text-center help-text">Please enter a valid url</p>
+       </div>
+
+       <div class="wrapper">
+         <div class="caption">
+           <input type="text" placeholder="Enter image url here" />
+             <p class="help-text">* My dear, please press enter to change background image.</p>
+         </div>
+       </div>
+
      </div>
-    <script type="text/javascript" src="js/prefixfree.min.js"></script>
-    <script type="text/javascript" src="js/dat.gui.min.js"></script>
+     <script
+  src="https://code.jquery.com/jquery-3.2.0.min.js"
+  integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I="
+  crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/fss.js"></script>
     <script type="text/javascript" src="js/js.js"></script>
   </body>

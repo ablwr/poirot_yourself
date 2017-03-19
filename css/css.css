@@ -1,3 +1,12 @@
+body {
+  margin:0;
+  background-image: url('../face.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
 .container {
   position: absolute;
   width: 100%;
@@ -11,5 +20,56 @@
 }
 
 #output {
-  opacity: 0.85;
+  opacity: 0.8;
+}
+
+.wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.wrapper input {
+  width: 20%;
+  border: none;
+  border-bottom: 1px solid lavenderblush;
+  color: lavenderblush;
+  font-size: 28px;
+  background: none;
+  outline: none;
+  opacity: 0.5;
+}
+
+.help-text {
+  color: grey;
+  font-size: 15px;
+  font-style: italic;
+}
+
+.alert-message{
+  position: fixed;
+  top: 0;
+  left: 22%;
+  display: block;
+  width: 200px;
+  padding: 10px;
+  margin: 0 auto;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background: black;
+  z-index: 2000;
+}
+
+.caption input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-family: 'Josefin Sans', sans-serif;
+}
+.caption input::-moz-placeholder { /* Firefox 19+ */
+  font-family: 'Josefin Sans', sans-serif;
+}
+.caption input:-ms-input-placeholder { /* IE 10+ */
+  font-family: 'Josefin Sans', sans-serif;
+}
+.caption input:-moz-placeholder { /* Firefox 18- */
+  font-family: 'Josefin Sans', sans-serif;
 }
