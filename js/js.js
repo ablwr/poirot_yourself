@@ -28,7 +28,7 @@
     diffuse: '#ccb8f5',
     speed: 0.001,
     gravity: 1200,
-    dampening: 0.95,
+    dampening: 0.5,
     minLimit: 10,
     maxLimit: null,
     minDistance: 20,
